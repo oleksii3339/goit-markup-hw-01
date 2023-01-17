@@ -9,11 +9,9 @@
 body {background-color: var(--primary-white-color);
     color: var(--title-text-color);
     font-family: Roboto, sans-serif;
-    letter-spacing: -0.03em;
-    font-weight: 400;
+    letter-spacing: 0.03em;
     font-size:14px ;
-    line-height: 1.71;
-}
+    }
 ul{list-style: none;}
 /* logo */
 .logo{
@@ -22,6 +20,7 @@ ul{list-style: none;}
 font-size: 26px;
 line-height: 1.2;
 color: var(--accent-color);
+text-decoration: none;
 }
 .logo-word{color: #000000;}
 /* head */
@@ -32,6 +31,7 @@ font-size: 14px;
 line-height: 1.1;
 letter-spacing: 0.02em;
     color: var(--title-text-color);
+text-decoration: none;
     
 }
 .link:focus,
@@ -46,9 +46,10 @@ letter-spacing: 0.02em;
 .link-info{
     font-weight: 500;
 font-size: 14px;
-line-height: 16px;
+line-height: 1.1;
 letter-spacing: 0.02em;
     color: var(--text-color);
+    text-decoration: none;
 }.link-info:focus,
 .link-info:hover{
     font-weight: 500;
@@ -79,6 +80,9 @@ line-height: 1.1;
 text-transform: uppercase;
 color: #212121;
    }
+.detals-text{font-size: 14px;
+    line-height: 1.7;
+     color: var(--text-color)}
 /* button */
 
 .blue-button{font-family: inherit;
@@ -105,7 +109,7 @@ button:hover{
     background-color: var(--accent-color);
 }
 /* section team */
-h3,h2{font-weight: 700;
+.work-team{font-weight: 700;
     font-size: 36px;
     line-height: 1.2;}
 
@@ -117,29 +121,35 @@ h3,h2{font-weight: 700;
     line-height: 1.18;
 color:var(--text-color)}
 /* portfolio */
-.post h2{
+.post-title{
     font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 }
-.post p{ font-size: 16px;
+.post-text{ font-size: 16px;
     line-height: 1.9;
 color: var(--text-color);}
 /* footer */
 footer{background-color: var(--background-color-black);}
 
-.addres a{
-font-size: 14px;
-line-height: 1.7;
-color: rgba(255, 255, 255, 0.6);
+
+.logo-second{color: var(--primary-white-color);
 }
-li.addres{font-style: normal;
-font-size: 14px;
-line-height: 1.7;
-color:var(--primary-white-color)
+.addres-city {text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--primary-white-color)
+     
 }
-.addres a:hover,
-.addres a:focus{
+.addres-link{text-decoration: none;
+    font-style: normal;
+        font-size: 14px;
+        line-height: 1.7;
+     color: rgba(255, 255, 255, 0.6);
+}
+.addres-link:hover,
+.addres-link:focus{
     color: var(--accent-color);
 }
