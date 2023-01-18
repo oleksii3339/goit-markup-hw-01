@@ -15,7 +15,7 @@ body {background-color: var(--primary-white-color);
 ul{list-style: none;}
 /* logo */
 .logo{
-    font-family: Raleway;
+    font-family: Raleway,sans-serif;
     font-weight: 700;
 font-size: 26px;
 line-height: 1.2;
@@ -58,13 +58,14 @@ line-height: 1.1;
 letter-spacing: 0.02em;
     color: var(--accent-color);
 }
+.link.current{color: var(--accent-color);}
 
 /* one */
-.section-one{
+.section-first{
     background-color:var(--background-color-black) ;
 }
 /* main */
-.main{
+.main-title{
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -74,7 +75,6 @@ text-transform: uppercase;
 color:var(--primary-white-color)
    ;}
    .detals-title{
-    font-weight: 700;
 font-size: 14px;
 line-height: 1.1;
 text-transform: uppercase;
@@ -94,6 +94,7 @@ height: 50px;
 background: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
+letter-spacing: 0.06;
 }
 button{
     font-weight: 500;
@@ -104,13 +105,13 @@ color: var(--title-text-color);
 cursor: pointer;
 
 }
-button:hover{
+button:hover,
+button:focus{
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
 /* section team */
-.work-team{font-weight: 700;
-    font-size: 36px;
+.work-team{ font-size: 36px;
     line-height: 1.2;}
 
 .name{font-weight: 500;
