@@ -178,7 +178,7 @@ padding-bottom: 25px;}
 
 /* button */
 
-.blue-button{font-family: inherit;
+.main-button{font-family: inherit;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
      width: 216px;
@@ -187,9 +187,9 @@ background:var(--accent-color);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 letter-spacing: 0.06;}
-.blue-button:hover{background-color:#188CE8;}
+.main-button:hover{background-color:#188CE8;}
 
-button{
+.btn{
     font-weight: 500;
 font-size: 16px;
 line-height: 1.6;
@@ -201,17 +201,17 @@ padding: 6px 22px;
 border: 0;
 border-radius: 4px;}
 
-button:hover,
-button:focus{
+.btn:hover,
+.btn:focus{
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);}
 
-.btn{margin-bottom: 50px;
+.btn-list{margin-bottom: 50px;
 display: flex;
 justify-content: center;;}
 
-.btn .btn-info+.btn-info{margin-left: 8px;}
+.btn-list .btn-item+.btn-item{margin-left: 8px;}
 /* section team */
 
 .team{background-color: var(--second-background-color);}
