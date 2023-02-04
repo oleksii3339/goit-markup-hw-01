@@ -49,10 +49,10 @@ line-height: 1.2;
 
 color: var(--accent-color);
 text-decoration: none;
-padding-top: 24px;
-padding-bottom: 25px;
-margin-right: 93px;}
-
+}
+.logo-head{margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;}
 
 
 .logo-word{color: #000000;}
@@ -181,13 +181,13 @@ padding-bottom: 25px;}
 .main-button{font-family: inherit;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+   font-weight: 700;
      width: 216px;
 height: 50px;
-background:var(--accent-color);
-box-shadow:0px, 4px
-rgba(0, 0, 0, 0.15);
+box-shadow:0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
-letter-spacing: 0.06;}
+letter-spacing: 0.06px;
+cursor: pointer;}
 .main-button:hover{background-color:#188CE8;}
 
 .btn{
@@ -216,6 +216,8 @@ justify-content: center;;}
 /* section team */
 
 .team{background-color: var(--second-background-color);}
+
+.detals-styles{max-width: 270px;}
 
 
 .work-team{ font-size: 36px;
@@ -286,7 +288,10 @@ margin-bottom: 4px;}
     line-height: 1.9;
 color: var(--text-color);}
 .portfolio-link{display: block;
-text-decoration: none;}
+text-decoration: none;
+font-style: normal;
+    text-decoration: none;
+outline: transparent;}
 .portfolio-list{display: flex;
 flex-wrap: wrap;
 margin-left: -15px;
@@ -298,8 +303,6 @@ margin-right: -15px;}
 .post-styles{padding: 20px 24px;
     border: 1px solid #EEEEEE;
 border-top: none;}
-.partfolio-link{font-style: normal;
-    text-decoration: none;}
 /* clients */
 .clients{display: flex;justify-content: center;}
 .link-client{
@@ -313,6 +316,7 @@ display: flex;
 justify-content: center;
 border: 1px solid var(--icon-color);
 border-radius: 4px;
+outline: transparent;
 }
 .link-company:hover,
 .link-company:focus{border: 1px solid var(--accent-color);}
@@ -353,16 +357,15 @@ padding-bottom: 60px;}
 .addres-link:hover,
 .addres-link:focus{
     color: var(--accent-color);}
-    b{font-style: normal;
+    .join-us{font-style: normal;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.1;
         color: var(--primary-white-color); 
 }
-.down{display: flex;}
+.down{display: flex;
+align-items: baseline;}
 
-b{margin-top: 12px;
-display: block;}
 .addres-item{
     height: 44px;
     width: 44px;
