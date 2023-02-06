@@ -33,7 +33,7 @@
       <section class="section-first section">
         <div class="container">
         <h1 class="main-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-        <button class="main-button" type="button">Замовити послугу</button>
+        <button class="main-button" type="button" data-modal-open   >Замовити послугу</button>
       </div>
       </section>
 <section class="main-text section">
@@ -74,9 +74,12 @@
       <div class="container">
       <h2 class="work-team" >Чим ми займаємося</h2>
       <ul class="work-photo">
-        <li><img src="./images/img.jpg" alt="технологія" width="370" /></li>
-        <li><img src="./images/img1.jpg" alt="технологія" width="370" /></li>
-        <li><img src="./images/img2.jpg" alt="технологія" width="370" /></li>
+        <li class="photo-item" ><img class="photo" src="./images/img.jpg" alt="технологія" width="370" />
+       <p class="photo-text">Десктопні додатки</p></li>
+        <li class="photo-item"><img src="./images/img1.jpg" alt="технологія" width="370" />
+        <p class="photo-text">Мобільні додатки</p></li>
+        <li class="photo-item"><img src="./images/img2.jpg" alt="технологія" width="370" />
+        <p class="photo-text">Дизайнерські рішення</p></li>
     </ul>
     </div>
     </section>
@@ -187,5 +190,11 @@
       </ul></div>
    </div>
      </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+      <button class="modal-button" type="button" data-modal-close>&#10005;</button>
+   </div> 
+  </div>
+  <script src="./js/model.js" type="module"></script>
   </body>
 </html>
