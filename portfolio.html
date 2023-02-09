@@ -17,33 +17,33 @@
   </head>
   <body>
     <!-- header -->
-    <header class="border">
-      <div class="container link-cont">
-        <nav class="item-link">
-          <a href="index.html" class="logo logo-head"
+    <header class="header">
+      <div class="container header-container">
+        <nav class="nav">
+          <a href="index.html" class="logo logo-header"
             >Web<span class="logo-word">Studio</span></a>
-          <ul class="header-text">
-            <li class="item"><a class="link" href="./index.html">Студія</a></li>
-            <li class="item">
-              <a class="link current" href="./portfolio.html">Портфоліо</a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html">Студія</a>
             </li>
-            <li class="item"><a class="link" href="">Контакти</a></li>
+            <li class="nav__item">
+              <a class="nav__link current" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="link-info-list">
-          <li class="item">
-            <a class="link-info" href="mailto:info@devstudio.com"
-              ><svg class="nav-icon" width="16" height="12">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link mail" href="mailto:info@devstudio.com"
+              ><svg class="nav__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a>
+              </svg>info@devstudio.com</a>
           </li>
-          <li class="item">
-            <a class="link-info" href="tel:+380961111111"
-              ><svg class="nav-icon" width="10" height="16">
+          <li class="header__item">
+            <a class="header__link tel" href="tel:+380961111111"
+              ><svg class="nav__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-tel"></use>
-              </svg>
-              +38 096 111 11 11</a>
+              </svg>+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -251,24 +251,21 @@
       <div class="container down">
         <div class="addres-block d-block">
           <a href="index.html" class="logo"
-            >Web<span class="logo-second">Studio</span></a >
+            >Web<span class="logo-second">Studio</span></a
+          >
           <address>
             <ul class="footer-styles">
               <li class="addres">
                 <a class="addres-city"
-                  href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+Ukraine,+02000/@50.4270183,30.5396073,3a,75y,240.65h,90t/data=!3m4!1e1!3m2!1smcVtNysL1uE3tpJzUcDMwA!2e0!4m2!3m1!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0?sa=X&ved=2ahUKEwjeqsyV_9P8AhXHl4sKHWf-DNIQxB16BAgYEAM"
-                >
-                  м. Київ, пр-т Лесі Українки,26</a
-                >
+                  href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+Ukraine,+02000/@50.4270183,30.5396073,3a,75y,240.65h,90t/data=!3m4!1e1!3m2!1smcVtNysL1uE3tpJzUcDMwA!2e0!4m2!3m1!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0?sa=X&ved=2ahUKEwjeqsyV_9P8AhXHl4sKHWf-DNIQxB16BAgYEAM">
+                  м. Київ, пр-т Лесі Українки,26</a>
               </li>
               <li class="addres">
                 <a class="addres-link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+                  >info@devstudio.com</a>
               </li>
               <li class="addres">
-                <a class="addres-link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a>
+                <a class="addres-link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -301,10 +298,14 @@
         <div>
           <p class="join-us addres-bottom">Підпишіться на розсилку</p>
           <div class="footer-group">
-          <input  class="footer-input" type="text" placeholder="E-mail"/>
-            <button class="second-button button-icon" type="button">Підписатися<svg class="icon-send" width="24" height="24"><use href="./images/icons.svg#icon-send"></use></svg></button>
-        </div>
+            <input class="footer-input" type="text" placeholder="E-mail" />
+            <button class="second-button button-icon" type="button">
+              Підписатися<svg class="icon-send" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </div>
+        </div>
       </div>
     </footer>
   </body>
