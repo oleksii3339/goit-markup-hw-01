@@ -11,19 +11,19 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
-    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- header -->
     <header class="header">
       <div class="container header-container">
         <nav class="nav">
-          <a href="index.html" class="logo logo-header"
+          <a href="index.html" class="logo nav__logo"
             >Web<span class="logo-word">Studio</span></a>
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link current" href="./index.html">Студія</a>
+              <a class="nav__link nav__link--active" href="./index.html">Студія</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="./portfolio.html">Портфоліо</a>
@@ -111,7 +111,7 @@
           </ul>
         </div>
       </section>
-      <!-- work -->
+      <!-- technology -->
       <section class="technology section">
         <div class="container">
           <h2 class="second-title">Чим ми займаємося</h2>
@@ -213,13 +213,8 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="photo"
-                src="./images/photo3.jpg"
-                alt="Marketing"
-                width="270"
-              />
-              <div class="team__box">
+              <img src="./images/photo3.jpg" alt="Marketing" width="270"/>
+            <div class="team__box">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__job">Marketing</p>
                 <ul class="list-job">
@@ -249,13 +244,8 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="photo"
-                src="./images/photo4.jpg"
-                alt="Designer"
-                width="270"
-              />
-              <div class="team__box">
+              <img src="./images/photo4.jpg" alt="Designer" width="270"/>
+               <div class="team__box">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__job">UI Designer</p>
                 <ul class="list-job">
@@ -263,22 +253,23 @@
                     <a class="link-job" href=""
                       ><svg class="icon-team" width="20" height="20">
                         <use
-                          href="./images/icons.svg#icon-instagram"
-                        ></use></svg></a>
+                          href="./images/icons.svg#icon-instagram">
+                        </use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="item-job">
-                    <a class="link-job" href=""
-                      ><svg class="icon-team" width="20" height="20">
+                    <a class="link-job" href="">
+                      <svg class="icon-team" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use></svg></a>
                   </li>
                   <li class="item-job">
-                    <a class="link-job" href=""
-                      ><svg class="icon-team" width="20" height="20">
+                    <a class="link-job" href="">
+                      <svg class="icon-team" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use></svg></a>
                   </li>
                   <li class="item-job">
-                    <a class="link-job" href=""
-                      ><svg class="icon-team" width="20" height="20">
+                    <a class="link-job" href=""><svg class="icon-team" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use></svg></a>
                   </li>
                 </ul>
@@ -298,13 +289,13 @@
                   <use href="./images/icons.svg#icon-logo1"></use></svg></a>
             </li>
             <li class="client__item">
-              <a class="client__link" href=""
-                ><svg class="client__icon" width="106" height="60">
+              <a class="client__link" href="">
+                <svg class="client__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-logo2"></use></svg></a>
             </li>
             <li class="client__item">
-              <a class="client__link" href=""
-                ><svg class="client__icon" width="106" height="60">
+              <a class="client__link" href="">
+                <svg class="client__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-logo3"></use></svg></a>
             </li>
             <li class="client__item">
@@ -313,13 +304,13 @@
                   <use href="./images/icons.svg#icon-logo4"></use></svg></a>
             </li>
             <li class="client__item">
-              <a class="client__link" href=""
-                ><svg class="client__icon" width="106" height="60">
+              <a class="client__link" href="">
+                <svg class="client__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-logo5"></use></svg></a>
             </li>
             <li class="client__item">
-              <a class="client__link" href=""
-                ><svg class="client__icon" width="106" height="60">
+              <a class="client__link" href="">
+                <svg class="client__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-logo6"></use></svg></a>
             </li>
           </ul>
@@ -379,7 +370,7 @@
         <div>
           <p class="footer__text addres-bottom">Підпишіться на розсилку</p>
           <div class="footer-group">
-            <input class="footer-input" type="text" placeholder="E-mail" />
+            <input class="footer-input" type="text" placeholder="E-mail" name="sing-up" />
             <button class="second-button button-icon" type="button">
               Підписатися<svg class="icon-send" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -401,35 +392,35 @@
         <form>
           <label class="modal-label">
             <span class="modal-comment">Ім'я</span>
-            <input class="modal-input" type="text" />
+            <input class="modal-input" name="name" type="text" />
             <svg class="modal-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </label>
           <label class="modal-label">
             <span class="modal-comment">Телефон</span>
-            <input class="modal-input" type="tel" />
+            <input class="modal-input" name="tel" type="tel" />
             <svg class="modal-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </label>
           <label class="modal-label">
             <span class="modal-comment">Пошта</span>
-            <input class="modal-input" type="email" />
+            <input class="modal-input" name="email" type="email" />
             <svg class="modal-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </label>
           <label class="modal-label">
             <span class="modal-comment">Коментар</span>
-            <textarea rows="5" placeholder="Введіть текст"></textarea>
+            <textarea rows="5" placeholder="Введіть текст" name="comment"></textarea>
           </label>
           <div class="modal-group block-flex-center">
             <input
               id="custom-checkbox"
               class="modal-checkbox"
               type="checkbox"
-            />
+              name="terms" />
             <label class="modal-label-checkbox" for="custom-checkbox">
               <span class="checkbox-custom">
                 <svg width="11" height="8" class="checkbox">
