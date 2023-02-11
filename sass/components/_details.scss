@@ -1,0 +1,38 @@
+.details{
+
+    &__list {display: flex;
+    
+    & li+li {
+        margin-left: 30px;}
+    
+    }
+
+    &__title {
+        font-size: 14px;
+        line-height: 1.1;
+        
+        text-transform: uppercase;
+        color: var(--title-text-color);
+        margin-bottom: 10px;
+    }
+
+
+    &__text {font-size: 14px;
+        line-height: 1.7;
+         color: var(--text-color)
+    }       
+    
+    &__icon {
+        margin-bottom: 30px;
+        width: 270px;
+        height: 120px;
+        background-color:var(--second-background-color);
+        border-radius: 4px;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    } 
+    &__item {
+        max-width: 270px;
+    }
+}

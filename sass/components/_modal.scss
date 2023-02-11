@@ -1,0 +1,189 @@
+.modal{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 528px;
+    min-height: 581px;
+    background-color: var(--primary-white-color);
+    transition: transform var(--transition-dir) var(--transition-time);
+    padding: 40px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    &-button{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: var(--primary-white-color);
+        cursor: pointer;
+        position: absolute;
+        top: 8px;
+        right:8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover .icon-x,
+        &:focus .icon-x {
+            fill: var(--accent-color);
+            transition: fill var(--transition-dir) var(--transition-time);
+        }
+    }
+    &-title{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        color: var(--title-text-color);
+        margin-bottom: 12px;
+    }
+    &-label{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-bottom:20px ;
+
+        :focus {
+            border-color: var(--accent-color);
+            outline: none;
+            transition: border-color var(--transition-dir) var(--transition-time);
+        }
+        & >.modal-input:focus~.modal-icon {
+            fill: var(--accent-color);
+        }
+
+        & > input,.modal-label > textarea{
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px; 
+            transition: border-color var(--transition-dir) var(--transition-time);
+        }
+        & > input{
+             padding: 7px 0;
+            padding-left: 35px;
+            padding-right: 5px;}
+        & > textarea{
+            padding: 12px 16px;
+        }
+        & > textarea::placeholder{
+            color: rgba(117, 117, 117, 0.5);
+        }
+        &:not(:last-child){
+            margin-bottom: 10px;
+        }
+    }
+    &-comment{
+        font-size: 12px;
+        line-height: 1.2;
+        letter-spacing: 0.01em;
+        color: var(--text-color);
+        margin-bottom: 5px;
+    }
+    &-checkbox{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        overflow: hidden;
+        clip: rect(0 0 0 0);  
+    }
+    &-icon{
+        fill: var(--title-text-color);
+        position: absolute;
+        bottom: 11px;
+        left: 15px;
+        transition: fill var(--transition-dir) var(--transition-time);
+
+        &:focus{
+            fill: var(--accent-color);
+        }
+    }
+    &-checkbox:checked + .modal-label-checkbox > .checkbox-custom {
+        background-color: var(--accent-color);
+        border: 0;
+
+        & .checkbox {
+                opacity: 1;
+            }
+    }
+
+   &-label-checkbox{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    &-link{
+        font-size: 14px;
+        line-height: 1.7;
+        color: var(--accent-color);
+        margin-left: 4px;
+    }
+    &-group{
+        margin: 20px 0 30px 0;
+    }
+    &-input {
+        height: 40px;
+    }
+}
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.5);}
+
+.backdrop {
+    transform: scale(1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: transform var(--transition-dir) var(--transition-time);
+    background-color: rgba(0, 0, 0, 0.2);
+
+    is-hidden {
+        visibility: hidden;
+        pointer-events: none;
+    .is-hidden .modal{
+        transform: translate(-50%) scale(0.5);}
+ 
+    
+    }
+}
+.is-active {
+    overflow: hidden;
+}
+.icon-close {
+    vertical-align: middle;
+}
+.icon-x {
+    transition: fill var(--transition-dir) var(--transition-time);
+}
+.checkbox {
+    width: 16px;
+    height: 15px;
+    fill: var(--primary-white-color);
+    opacity: 0;
+    background-color: var(--accent-color);
+    transition: background-color var(--transition-dir) var(--transition-time);
+
+    &-info {
+        font-size: 14px;
+        line-height: 1.7;
+        color: var(--text-color);}
+    
+    &-custom{ 
+        width: 16px;
+        height: 15px;
+        border: 2px solid var(--title-text-color);
+        border-radius: 1px;
+        display: inline-block;
+        margin-right: 7px;}
+        
+    
+}
+.block-flex-center {
+    display: flex;
+    justify-content: center;
+}

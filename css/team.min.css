@@ -1,0 +1,1 @@
+.team{background-color:var(--second-background-color)}.team__name{font-weight:500;font-size:16px;line-height:1.18;margin-bottom:10px}.team__job{font-size:16px;line-height:1.18;color:var(--text-color);margin-bottom:16px}.team__list{display:-webkit-box;display:-ms-flexbox;display:flex}.team__list .team__item+.team__item{margin-left:30px}/*# sourceMappingURL=team.min.css.map */

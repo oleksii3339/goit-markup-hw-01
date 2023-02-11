@@ -1,0 +1,14 @@
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.logo__word {
+  color: var(--black-color);
+}
+.logo.addres {
+  margin-bottom: 20px;
+}/*# sourceMappingURL=logo.css.map */

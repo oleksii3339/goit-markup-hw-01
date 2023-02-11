@@ -1,0 +1,30 @@
+.details__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.details__list li + li {
+  margin-left: 30px;
+}
+.details__title {
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+.details__text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-color);
+}
+.details__icon {
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: var(--second-background-color);
+  border-radius: 4px;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}/*# sourceMappingURL=details.css.map */
