@@ -21,6 +21,7 @@
         <nav class="nav">
           <a href="index.html" class="logo nav__logo"
             >Web<span class="logo__word">Studio</span></a>
+            <button class="header__button js-open-menu" type="button" ><svg width="24" height="16"><use href="./images/icons.svg#icon-menu"></use></svg></button>
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link nav__link--active" href="./index.html">Студія</a>
@@ -49,14 +50,14 @@
     </header>
     <!-- hero -->
     <main>
-      <section class="hero section">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
           <button class="hero__button" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
-      </section>
+      </section> -->
       <section class="section">
         <div class="container">
           <h2 class="hide">Attention</h2>
@@ -112,7 +113,7 @@
         </div>
       </section>
       <!-- technology -->
-      <section class="technology section">
+       <!-- <section class="technology section">
         <div class="container">
           <h2 class="second-title">Чим ми займаємося</h2>
           <ul class="technology__list">
@@ -135,9 +136,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- team -->
-      <section class="team section">
+       <!-- <section class="team section">
         <div class="container">
           <h2 class="second-title">Наша команда</h2>
           <ul class="team__list">
@@ -181,8 +182,7 @@
                 class="photo"
                 src="./images/photo2.jpg"
                 alt="Frontend Developer"
-                width="270"
-              />
+                width="270"/>
               <div class="team__box">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__job">Frontend Developer</p>
@@ -277,9 +277,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- clients -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="second-title">Постійні клієнти</h2>
           <ul class="client__list">
@@ -315,10 +315,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container down">
         <div class="addres-block d-block">
           <a href="index.html" class="logo"
@@ -379,9 +379,9 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- modal -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" type="button" data-modal-close>
           <svg width="11" height="11" class="icon-x">
@@ -440,6 +440,32 @@
         </form>
       </div>
     </div>
+    <div class="modal-menu" > 
+      <button class="modal-menu__btn js-close-menu" type="button" aria-label="кнопка для закривання меню"><svg width="40" height="40"><use href="./images/icons.svg#icon-x"></use></svg></button>
+      <ul class="modal-menu__list"></ul>
+      <li class="modal-menu__item">
+        <a class="modal-menu__link" href="#">Студія</a>
+      </li>
+        <li class="modal-menu__item">
+        <a class="modal-menu__link" href="#">Портфоліо</a>
+      </li>
+        <li class="modal-menu__item">
+        <a class="modal-menu__link" href="#">Контакти</a>
+      </li>
+      <ul class="modal-menu-contact__list"></ul>
+      <li class="modal-menu-contact__item">
+         <a class="modal-menu-contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+      <li class="modal-menu-contact__item">
+          <a class="modal-menu-contact__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <ul class="modal-menu-social__list">
+                  <li class="modal-menu-social__item"><a class="modal-menu-social__link" href="">Instagram</a></li>
+                  <li class="modal-menu-social__item"><a class="modal-menu-social__link" href="">Twitter</a></li>
+                  <li class="modal-menu-social__item"><a class="modal-menu-social__link" href="">Facebook</a></li>
+                  <li class="modal-menu-social__item"><a class="modal-menu-social__link" href="">LinkedIn</a></li>
+                </ul>
+      </div> -->
     <script src="./js/model.js" type="module"></script>
   </body>
 </html>
