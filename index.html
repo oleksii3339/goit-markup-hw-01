@@ -20,10 +20,10 @@
     <!-- header -->
     <header class="header">
       <div class="container header__container">
-        <nav class="nav">
-          <a href="index.html" class="logo nav__logo"
+        <a href="index.html" class="logo nav__logo"
             >Web<span class="logo__word">Studio</span></a>
             <button class="header__button js-open-menu" type="button" ><svg width="24" height="16"><use href="./images/icons.svg#icon-menu"></use></svg></button>
+        <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link nav__link--active" href="./index.html">Студія</a>
@@ -448,7 +448,7 @@
         </form>
       </div>
     </div>
-    <div class="modal-menu">
+    <div class="modal-menu js-menu-container">
       <button
         class="modal-menu__btn js-close-menu"
         type="button"
@@ -496,6 +496,12 @@
         </li>
       </ul>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/model.js" type="module"></script>
      <script src="./js/mobile-menu.js" type="module"></script>
   </body>
