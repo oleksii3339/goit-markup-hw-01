@@ -1,110 +1,89 @@
-.team{
-    background-color: var(--second-background-color);
+.team {
+  background-color: var(--second-background-color);
 
-    &__name{
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.18;
-        margin-bottom: 10px;
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    margin-bottom: 10px;
+  }
+
+  &__job {
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--text-color);
+    margin-bottom: 16px;
+  }
+
+  &__list {
+@media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+      display: flex;
+      gap: 30px;
     }
+  }
 
+  &__box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--primary-white-color);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
 
-    &__job{
-        font-size: 16px;
-        line-height: 1.18;
-        color:var(--text-color);
-        margin-bottom: 16px;
+  &__item {
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
-
-
-    &__list{
-        display: flex;
-        gap: 30px;
+     @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
     }
-        
-    &__box {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        background-color: var(--primary-white-color);
-        border-bottom-left-radius: 4px;
-        border-bottom-right-radius: 4px;
+     @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
     }
-
-    &__item{ 
-        
-        text-align: center;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    }
-}
-
-.technology{
-     padding-top: 0;
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .list-job {
-        display: flex;
-        justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-.list-job li+li{
-         margin-left: 10px;
-}
-
-.item-job{
-        height: 44px;
-        width: 44px;
-        border-radius: 50%;
+.list-job li + li {
+  margin-left: 10px;
 }
 
-.link-job{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;transition: fill var(--transition-dir) var(--transition-time);
-        transition: background-color var(--transition-dir) var(--transition-time);
-
-    &:hover,
-    &:focus{
-        background-color: var(--accent-color);
-        transition: background-color var(--transition-dir) var(--transition-time);
-    }
-    
-    &:hover .icon-team,
-    &:focus .icon-team{fill: var(--primary-white-color); 
-    }
+.item-job {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
 }
 
-.icon-team{
-        fill:var(--icon-color);
-        transition: fill var(--transition-dir) var(--transition-time);
+.link-job {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: fill var(--transition-dir) var(--transition-time);
+  transition: background-color var(--transition-dir) var(--transition-time);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    transition: background-color var(--transition-dir) var(--transition-time);
+  }
+
+  &:hover .icon-team,
+  &:focus .icon-team {
+    fill: var(--primary-white-color);
+  }
 }
-@media screen and (max-width:480px) {
-    .team {
-        &__item {
-            max-width: 450px;
-        }
-
-        &__list {
-            display: block;
-        }
-       
-    }
+.icon-team {
+  fill: var(--icon-color);
 }
-
-@media screen and (min-width:480px) and (max-width:767px) {
-
-    .team {
-        &__item {
-            max-width: calc((100% - 30px) / 2);
-        }
-
-        &__list {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-    }
-
-}
-

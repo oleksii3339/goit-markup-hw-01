@@ -1,148 +1,151 @@
 .nav {
-   display: none;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
 
-    &__link {   
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.1;
-        letter-spacing: 0.02em;
-        
-        color: var(--title-text-color);
-        text-decoration: none;
-        
-        padding-top: 32px;
-        padding-bottom: 32px;
-        position: relative;
-        
-        transition: color var(--transition-dir) var(--transition-time);
+    color: var(--title-text-color);
+    text-decoration: none;
 
-        &:hover,
-        &:focus {
-            color: var(--accent-color);
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 1.1;
-            letter-spacing: 0.02em;
-        }
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
 
-        &--active {
-            color: var(--accent-color);
-        }
+    transition: color var(--transition-dir) var(--transition-time);
 
-        &--active::after {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 4px;
-            bottom: 0;
-            background-color: var(--accent-color);
-            border-radius: 2px;
-            position: absolute;
-        }
-        
-
-        
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
     }
 
-    &__list &__item + &__item {
-            margin-left: 50px;
+    &--active {
+      color: var(--accent-color);
     }
- 
-    &__icon{
-            fill: var(--text-color);
-            margin-right: 10px;
-            transition: fill var(--transition-dir) var(--transition-time);
-            }
-        
 
-
-    &__icon:hover,
-    &__icon:focus{
-            fill: var(--accent-color);
-            transition: fill var(--transition-dir) var(--transition-time);
+    &--active::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      bottom: 0;
+      background-color: var(--accent-color);
+      border-radius: 2px;
+      position: absolute;
     }
-    
-    &__list{
-            
-           }
-    &__logo{
-                
+  }
+
+  &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+  }
+  &__icon {
+    fill: var(--text-color);
+    margin-right: 10px;
+    transition: fill var(--transition-dir) var(--transition-time);
+  }
+
+  &__icon:hover,
+  &__icon:focus {
+    fill: var(--accent-color);
+    transition: fill var(--transition-dir) var(--transition-time);
+  }
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
 
-.header{
-    border-bottom: 1px solid #ECECEC;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    &__container{
-            
-           display: flex;
-           justify-content: space-between;} 
+  &__logo {
+    @media screen and (max-width: 767px) {
+      padding: 16px 0;
+    }
+    @media screen and (min-width: 768px) {
+      padding-top: 24px;
+      padding-bottom: 25px;
+    }
+  }
+  &__list {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
+  }
+  &__item {
+    @media screen and (min-width: 1200px) {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    text-decoration: none;
 
+    align-items: center;
 
-    &__list{
-            }
+    transition: color var(--transition-dir) var(--transition-time);
 
+    &:focus,
+    &:hover {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+      color: var(--accent-color);
+    }
 
+    &:focus .nav__icon,
+    &:hover .nav__icon {
+      fill: var(--accent-color);
+      transition: fill var(--transition-dir) var(--transition-time);
+    }
+  }
+  &__button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 
-    &__link{
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 1.1;
-            letter-spacing: 0.02em;
-            color: var(--text-color);
-            text-decoration: none;
-            
-            align-items: center;
-            padding-top: 32px;
-            padding-bottom: 32px;
-            
-            transition: color var(--transition-dir) var(--transition-time);
-        
-
-        &:focus,
-        &:hover{
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 1.1;
-            letter-spacing: 0.02em;
-            color: var(--accent-color); }
-        
-
-        &:focus .nav__icon,
-        &:hover .nav__icon{fill: var(--accent-color);
-           transition: fill var(--transition-dir) var(--transition-time);
-        } 
-        }
-        &__button{
-                width: 30px;
-                height: 30px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border: none;
-                background-color: transparent;
-                cursor: pointer;
-                
-@media screen and (min-width:768px) 
-    {display: none;}
-
-}
-}
-@media screen and (min-width:320px ) and (max-width:480px) {
-        .nav {
-                &__link {display: none;
-                }
-        }
-        .header{
-                &__link {
-                        display: none;
-                }
-        }
-}
-
-@media screen and (min-width:480px) and (max-width:768px) {
-
-}
-@media screen and (min-width:768px) and (max-width:1200px){
-
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
 }

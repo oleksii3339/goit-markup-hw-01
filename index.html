@@ -20,13 +20,19 @@
     <!-- header -->
     <header class="header">
       <div class="container header__container">
-        <a href="index.html" class="logo nav__logo"
-            >Web<span class="logo__word">Studio</span></a>
-            <button class="header__button js-open-menu" type="button" ><svg width="24" height="16"><use href="./images/icons.svg#icon-menu"></use></svg></button>
+        <a href="index.html" class="logo header__logo"
+          >Web<span class="logo__word">Studio</span></a>
+        <button class="header__button js-open-menu" type="button">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link nav__link--active" href="./index.html">Студія</a>
+              <a class="nav__link nav__link--active" href="./index.html"
+                >Студія</a
+              >
             </li>
             <li class="nav__item">
               <a class="nav__link" href="./portfolio.html">Портфоліо</a>
@@ -38,28 +44,27 @@
           <li class="header__item">
             <a class="header__link mail" href="mailto:info@devstudio.com"
               ><svg class="nav__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>info@devstudio.com</a>
+                <use href="./images/icons.svg#icon-mail"></use></svg>info@devstudio.com</a
+            >
           </li>
           <li class="header__item">
-            <a class="header__link tel" href="tel:+380961111111"
-              ><svg class="nav__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-tel"></use>
-              </svg>+38 096 111 11 11</a>
+            <a class="header__link tel" href="tel:+380961111111">
+          <svg class="nav__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-tel"></use></svg>+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
     </header>
     <!-- hero -->
     <main>
-      <!-- <section class="hero">
+       <section class="hero">
         <div class="container">
           <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
           <button class="hero__button" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
-      </section> -->
+      </section>
       <section class="section">
         <div class="container">
           <h2 class="hide">Attention</h2>
@@ -115,7 +120,7 @@
         </div>
       </section>
       <!-- technology -->
-      <!-- <section class="technology section">
+       <section class="technology section">
         <div class="container">
           <h2 class="second-title">Чим ми займаємося</h2>
           <ul class="technology__list">
@@ -138,9 +143,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- team -->
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="second-title">Наша команда</h2>
           <ul class="team__list">
@@ -279,9 +284,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- clients -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="second-title">Постійні клієнти</h2>
           <ul class="client__list">
@@ -317,10 +322,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container down">
         <div class="addres-block d-block">
           <a href="index.html" class="logo"
@@ -381,7 +386,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer> 
     <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -435,8 +440,7 @@
                 </svg>
               </span>
               <span class="checkbox-info"
-                >Погоджуюся з розсилкою та приймаю</span
-              >
+                >Погоджуюся з розсилкою та приймаю</span>
               <a class="modal-link" href="#">Умови договору</a>
             </label>
           </div>
@@ -451,16 +455,14 @@
     <div class="modal-menu js-menu-container">
       <button
         class="modal-menu__btn js-close-menu"
-        type="button"
-        aria-label="кнопка для закривання меню"
-      >
-        <svg width="40" height="40">
+        type="button" aria-label="кнопка для закривання меню">
+        <svg class="icon-close" width="18" height="18">
           <use href="./images/icons.svg#icon-x"></use>
         </svg>
       </button>
       <ul class="modal-menu__list">
         <li class="modal-menu__item">
-          <a class="modal-menu__link" href="#">Студія</a>
+          <a class="modal-menu__link current" href="#">Студія</a>
         </li>
         <li class="modal-menu__item">
           <a class="modal-menu__link" href="#">Портфоліо</a>
@@ -469,6 +471,7 @@
           <a class="modal-menu__link" href="#">Контакти</a>
         </li>
       </ul>
+      <div class="modal-menu__box">
       <ul class="modal-menu-contact__list">
         <li class="modal-menu-contact__item">
           <a class="modal-menu-contact__link" href="mailto:info@devstudio.com"
@@ -476,7 +479,7 @@
           >
         </li>
         <li class="modal-menu-contact__item">
-          <a class="modal-menu-contact__link" href="tel:+380961111111"
+          <a class="modal-menu-contact__link telefon" href="tel:+380961111111"
             >+38 096 111 11 11</a
           >
         </li>
@@ -495,6 +498,7 @@
           <a class="modal-menu-social__link" href="">LinkedIn</a>
         </li>
       </ul>
+      </div>
     </div>
     <script
       defer
@@ -503,6 +507,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/model.js" type="module"></script>
-     <script src="./js/mobile-menu.js" type="module"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
   </body>
 </html>
