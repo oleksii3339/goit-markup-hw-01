@@ -59,7 +59,7 @@
     <main>
        <section class="hero">
         <div class="container">
-          <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+        <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
           <button class="hero__button" type="button" data-modal-open>
             Замовити послугу
           </button>
@@ -126,35 +126,54 @@
           <ul class="technology__list">
             <li class="technology__item">
               <img
+              srcset="./images/desctop/desctop-img1-min.jpg 1x, ./images/desctop/desctop-img1@2x-min.jpg 2x"
                 class="photo"
-                src="./images/img.jpg"
+                src="./images/desctop/desctop-img1-min.jpg"
                 alt="технологія"
                 width="370"
+                loading="lazy"
               />
               <p class="technology__text">Десктопні додатки</p>
             </li>
             <li class="technology__item">
-              <img src="./images/img1.jpg" alt="технологія" width="370" />
+              <img srcset="./images/desctop/desctop-img2@2x-min.jpg 2x"
+              src="./images/img1.jpg" alt="технологія" width="370" />
               <p class="technology__text">Мобільні додатки</p>
             </li>
             <li class="technology__item">
-              <img src="./images/img2.jpg" alt="технологія" width="370" />
+              <img srcset="./images/desctop/desctop-img3@2x-min.jpg 2x"
+              src="./images/img2.jpg" alt="технологія" width="370" />
               <p class="technology__text">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
       </section>
       <!-- team -->
-      <section class="team section">
+      <!-- <section class="team section">
         <div class="container">
           <h2 class="second-title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
+              <picture>
+                 <source 
+                srcset="./images/desctop/desctop-team-img1-min.jpg 1x,./images/desctop/desctop-team-img1@2x-min.jpg 2x"
+                media="(min-width:1200px)"
+                />
+                 <source 
+                srcset="./images/tablet/tablet-img1-min.jpg 1x,./images/tablet/tablet-img1@2x-min.jpg 2x"
+                media="(min-width:768px)"
+                />
+                <source
+                srcset="./images/mobile/mob-img1-min.jpg 1x,./images/mobile/mob-img1@2x-min.jpg 2x"
+                media="(max-width:767px)"
+                />
+                 <img
                 class="photo"
-                src="./images/photo1.jpg"
+                src="./images/mobile/mob-img1-min.jpg"
                 alt="Product Designer "
-                width="270"/>
+                loading="lazy"
+                />
+              </picture>
               <div class="team__box">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__job">Product Designer</p>
@@ -185,11 +204,25 @@
               </div>
             </li>
             <li class="team__item">
-              <img
+              <picture>
+                <source 
+                srcset="./images/mobile/mob-img2-min.jpg 1x,./images/mobile/mob-img2@2x-min.jpg 2x"
+                media="(min-width:480px)"
+                />
+                <source 
+                srcset="./images/tablet/tablet-img2-min.jpg 1x,./images/tablet/tablet-img2@2x-min.jpg 2x"
+                media="(min-width:768px)"
+                />
+                <source 
+                srcset="./images/desctop/desctop-team-img2-min.jpg 1x,./images/desctop/desctop-team-img2@2x-min.jpg 2x"
+                media="(min-width:1200px)"
+                />
+                 <img
                 class="photo"
                 src="./images/photo2.jpg"
-                alt="Frontend Developer"
-                width="270"/>
+                alt="Product Designer "
+                />
+              </picture>
               <div class="team__box">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__job">Frontend Developer</p>
@@ -220,7 +253,25 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/photo3.jpg" alt="Marketing" width="270"/>
+              <picture>
+                <source 
+                srcset="./images/mobile/mob-img3-min.jpg 1x,./images/mobile/mob-img3@2x-min.jpg 2x"
+                media="(min-width:480px)"
+                />
+                <source 
+                srcset="./images/tablet/tablet-img3-min.jpg 1x,./images/tablet/tablet-img3@2x-min.jpg 2x"
+                media="(min-width:768px)"
+                />
+                <source 
+                srcset="./images/desctop/desctop-team-img3-min.jpg 1x,./images/desctop/desctop-team-img3@2x-min.jpg 2x"
+                media="(min-width:1200px)"
+                />
+                 <img
+                class="photo"
+                src="./images/photo3.jpg"
+                alt="Product Designer "
+               />
+              </picture>
             <div class="team__box">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__job">Marketing</p>
@@ -251,7 +302,25 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/photo4.jpg" alt="Designer" width="270"/>
+               <picture>
+                <source 
+                srcset="./images/mobile/mob-img4-min.jpg 1x,./images/mobile/mob-img4@2x-min.jpg 2x"
+                media="(min-width:480px)"
+                />
+                <source 
+                srcset="./images/tablet/tablet-img4-min.jpg 1x,./images/tablet/tablet-img4@2x-min.jpg 2x"
+                media="(min-width:768px)"
+                />
+                <source 
+                srcset="./images/desctop/desctop-team-img4-min.jpg 1x,./images/desctop/desctop-team-img4@2x-min.jpg 2x"
+                media="(min-width:1200px)"
+                />
+                 <img
+                class="photo"
+                src="./images/photo4.jpg"
+                alt="Product Designer "
+               />
+              </picture>
                <div class="team__box">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__job">UI Designer</p>
@@ -284,7 +353,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- clients -->
       <section class="section">
         <div class="container">
@@ -326,7 +395,7 @@
     </main>
     <!-- footer -->
     <footer class="footer">
-      <div class="container down">
+      <div class="container footer__box">
         <div class="addres-block d-block">
           <a href="index.html" class="logo"
             >Web<span class="footer__logo">Studio</span></a>
@@ -431,8 +500,7 @@
               id="custom-checkbox"
               class="modal-checkbox"
               type="checkbox"
-              name="terms"
-            />
+              name="terms" />
             <label class="modal-label-checkbox" for="custom-checkbox">
               <span class="checkbox-custom">
                 <svg width="11" height="8" class="checkbox">
@@ -452,6 +520,7 @@
         </form>
       </div>
     </div>
+    <!-- modal-menu -->
     <div class="modal-menu js-menu-container">
       <button
         class="modal-menu__btn js-close-menu"

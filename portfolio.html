@@ -20,30 +20,37 @@
     <!-- header -->
     <header class="header">
       <div class="container header__container">
+        <a href="index.html" class="logo header__logo"
+          >Web<span class="logo__word">Studio</span></a>
+        <button class="header__button js-open-menu" type="button">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <nav class="nav">
-          <a href="index.html" class="logo nav__logo">Web<span class="logo__word">Studio</span></a>
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="./index.html">Студія</a>
+              <a class="nav__link" href="./index.html">Студія</a
+              >
             </li>
             <li class="nav__item">
               <a class="nav__link nav__link--active" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="nav__item"><a class="nav__link" href="">Контакти</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Контакти</a>
+            </li>
           </ul>
         </nav>
         <ul class="header__list">
           <li class="header__item">
             <a class="header__link mail" href="mailto:info@devstudio.com"
               ><svg class="nav__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>info@devstudio.com</a>
+                <use href="./images/icons.svg#icon-mail"></use></svg>info@devstudio.com</a
+            >
           </li>
           <li class="header__item">
-            <a class="header__link tel" href="tel:+380961111111"
-              ><svg class="nav__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-tel"></use>
-              </svg>+38 096 111 11 11</a>
+            <a class="header__link tel" href="tel:+380961111111">
+          <svg class="nav__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-tel"></use></svg>+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -74,7 +81,16 @@
             <li>
               <a class="portfolio-link" href="">
                 <div class="portfolio-image">
-                  <img src="./images/imgp1.jpg" alt="" width="370" />
+                  <img srcset="./images/desctop/desctop-portfolio-img1-min.jpg 370w,
+                  ./images/tablet/tablet-portfolio-img1-min.jpg 354w,
+                    ./images/mobile/mobile-portfolio-img1-min.jpg 450w,
+                    ./images/desctop/desctop-portfolio-img1@2x-min.jpg 740w,
+                    ./images/tablet/tablet-portfolio-img1@2x-min.jpg 708w,
+                    ./images/mobile/mobile-portfolio-img1@2x-min.jpg 900w"
+                    sizes="(min-width:1200px) 370px,
+                    (min-width:768px) 354px,
+                    (max-width:767px) 450px"
+                  src="./images/mobile/mob-hero-img-min.jpg" alt="" loading="lazy"/>
                   <div class="portfolio-box">
                     <p class="portfolio-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -93,7 +109,17 @@
             <li>
               <a class="portfolio-link" href="">
                 <div class="portfolio-image">
-                  <img src="./images/imgp2.jpg" alt="" width="370" />
+                  <img srcset="
+                  ./images/desctop/desctop-portfolio-img2-min.jpg 370w,
+                  ./images/tablet/tablet-portfolio-img2-min.jpg 354w,
+                  ./images/mobile/mobile-portfolio-img2-min.jpg 450w,
+                  ./images/desctop/desctop-portfolio-img2@2x-min.jpg 740w,
+                  ./images/tablet/tablet-portfolio-img2@2x-min.jpg 708w,
+                  ./images/mobile/mobile-portfolio-img2@2x-min.jpg 900w"
+                  sizes="(min-width:1200px) 370px,
+                  (min-width:768px) 354px,
+                  (max-width:767px) 450px"
+                  src="./images/mobile/mobile-portfolio-img2-min.jpg" alt="" loading="lazy" />
                   <div class="portfolio-box">
                     <p class="portfolio-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -248,7 +274,7 @@
     </main>
     <!-- footer -->
     <footer class="footer">
-      <div class="container down">
+      <div class="container footer__box">
         <div class="addres-block d-block">
           <a href="index.html" class="logo"
             >Web<span class="footer__logo">Studio</span></a>
@@ -262,8 +288,7 @@
               </li>
               <li class="addres__item">
                 <a class="addres__link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+                  >info@devstudio.com</a>
               </li>
               <li class="addres__item">
                 <a class="addres__link" href="tel:+380961111111"
@@ -297,18 +322,75 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer__contacts">
           <p class="footer__text addres-bottom">Підпишіться на розсилку</p>
-          <div class="footer-group">
-            <input class="footer-input" type="text" placeholder="E-mail" />
+           <form class="footer-group">
+            <input class="footer-input" type="text" placeholder="E-mail" name="sing-up" />
             <button class="second-button button-icon" type="button">
-              Підписатися<svg class="icon-send" width="24" height="24">
+              Підписатися<svg class="footer__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
-    </footer>
+    </footer> 
+    <!-- modal-menu -->
+    <div class="modal-menu js-menu-container">
+      <button
+        class="modal-menu__btn js-close-menu"
+        type="button" aria-label="кнопка для закривання меню">
+        <svg class="icon-close" width="18" height="18">
+          <use href="./images/icons.svg#icon-x"></use>
+        </svg>
+      </button>
+      <ul class="modal-menu__list">
+        <li class="modal-menu__item">
+          <a class="modal-menu__link" href="#">Студія</a>
+        </li>
+        <li class="modal-menu__item">
+          <a class="modal-menu__link current" href="#">Портфоліо</a>
+        </li>
+        <li class="modal-menu__item">
+          <a class="modal-menu__link" href="#">Контакти</a>
+        </li>
+      </ul>
+      <div class="modal-menu__box">
+      <ul class="modal-menu-contact__list">
+        <li class="modal-menu-contact__item">
+          <a class="modal-menu-contact__link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="modal-menu-contact__item">
+          <a class="modal-menu-contact__link telefon" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+      <ul class="modal-menu-social__list">
+        <li class="modal-menu-social__item">
+          <a class="modal-menu-social__link" href="">Instagram</a>
+        </li>
+        <li class="modal-menu-social__item">
+          <a class="modal-menu-social__link" href="">Twitter</a>
+        </li>
+        <li class="modal-menu-social__item">
+          <a class="modal-menu-social__link" href="">Facebook</a>
+        </li>
+        <li class="modal-menu-social__item">
+          <a class="modal-menu-social__link" href="">LinkedIn</a>
+        </li>
+      </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/model.js" type="module"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
   </body>
 </html>

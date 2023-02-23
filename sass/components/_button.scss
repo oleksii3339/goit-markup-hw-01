@@ -24,9 +24,8 @@
         margin-bottom: 50px;
         display: flex;
         justify-content: center;
-    
-    & .btn-item + .btn-item{
-        margin-left: 8px;}
+        flex-wrap: wrap;
+        gap: 8px;
     }
 }
 
@@ -52,11 +51,7 @@
 
 }
 
-.button-icon {
-    
-    
 
-}  
 
 
 

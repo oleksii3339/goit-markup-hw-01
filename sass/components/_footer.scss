@@ -88,6 +88,20 @@
       transition: background-color var(--transition-dir) var(--transition-time);
     }
   }
+  &__box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: baseline;
+    }
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+    }
+  }
 }
 
 .addres {
@@ -121,20 +135,6 @@
 
   &-bottom {
     margin-bottom: 20px;
-  }
-}
-.down {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  @media screen and (min-width: 768px) {
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: baseline;
-  }
-  @media screen and (min-width: 1200px) {
-    justify-content: flex-start;
   }
 }
 
